@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitDB Pro - Banco de Dados de Exercícios com GIFs e QR Codes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Slate 900 */
+            color: #f8fafc;
+        }
+        .neon-text {
+            color: #22c55e;
+            text-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+        }
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(34, 197, 94, 0.6);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-green-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center border-b border-gray-800">
+        <div class="flex items-center gap-2">
+            <i data-lucide="database" class="text-green-500 w-8 h-8"></i>
+            <span class="text-2xl font-bold tracking-tight">FitDB<span class="text-green-500">Pro</span></span>
+        </div>
+        <a href="#comprar" class="hidden md:inline-block bg-green-500 hover:bg-green-400 text-gray-900 font-bold py-2 px-6 rounded-full transition-colors">
+            Acesso Imediato
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="container mx-auto px-6 py-20 text-center md:py-32">
+        <div class="inline-block bg-gray-800 border border-gray-700 text-green-400 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+            🚀 Essencial para Devs, Personais e Academias
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+            Economize Meses de Trabalho.<br>
+            <span class="text-green-500">O Banco de Dados Definitivo de Exercícios.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-10">
+            Planilha completa e estruturada com <strong class="text-white">605 exercícios catalogados</strong>, incluindo GIFs de execução de alta qualidade e QR Codes individuais. Pronto para integrar no seu aplicativo, site ou consultoria.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a href="#comprar" class="btn-glow w-full sm:w-auto bg-green-500 text-gray-900 font-bold text-lg py-4 px-10 rounded-full transition-all">
+                Garantir Minha Cópia Agora
+            </a>
+            <p class="text-sm text-gray-500 sm:hidden">Acesso vitalício instantâneo</p>
+        </div>
+        
+        <!-- Mockup Visual -->
+        <div class="mt-16 relative max-w-5xl mx-auto rounded-xl overflow-hidden shadow-2xl shadow-green-500/10 border border-gray-800">
+            <div class="bg-gray-800 flex items-center px-4 py-2 border-b border-gray-700 gap-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                <span class="text-xs text-gray-400 ml-4">Google Sheets / CSV Data</span>
+            </div>
+            <!-- Simulação de uma tabela moderna -->
+            <div class="bg-gray-900 p-4 overflow-x-auto">
+                <table class="w-full text-left text-sm text-gray-300">
+                    <thead class="text-xs text-gray-400 uppercase bg-gray-800 rounded-lg">
+                        <tr>
+                            <th class="px-6 py-3">ID</th>
+                            <th class="px-6 py-3">Nome do Exercício</th>
+                            <th class="px-6 py-3">Grupo Muscular</th>
+                            <th class="px-6 py-3">Mídia (GIF)</th>
+                            <th class="px-6 py-3">QR Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-800">
+                            <td class="px-6 py-4 font-mono">001</td>
+                            <td class="px-6 py-4 font-bold text-white">Supino Reto com Barra</td>
+                            <td class="px-6 py-4"><span class="bg-blue-900/50 text-blue-300 px-2 py-1 rounded text-xs">Peitoral</span></td>
+                            <td class="px-6 py-4 text-green-400 flex items-center gap-1"><i data-lucide="image" class="w-4 h-4"></i> Link.gif</td>
+                            <td class="px-6 py-4"><i data-lucide="qr-code" class="w-5 h-5 text-gray-400"></i></td>
+                        </tr>
+                        <tr class="border-b border-gray-800">
+                            <td class="px-6 py-4 font-mono">002</td>
+                            <td class="px-6 py-4 font-bold text-white">Agachamento Livre</td>
+                            <td class="px-6 py-4"><span class="bg-orange-900/50 text-orange-300 px-2 py-1 rounded text-xs">Quadríceps</span></td>
+                            <td class="px-6 py-4 text-green-400 flex items-center gap-1"><i data-lucide="image" class="w-4 h-4"></i> Link.gif</td>
+                            <td class="px-6 py-4"><i data-lucide="qr-code" class="w-5 h-5 text-gray-400"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-mono">...</td>
+                            <td class="px-6 py-4 text-gray-500">Mais 603 exercícios catalogados</td>
+                            <td class="px-6 py-4"></td>
+                            <td class="px-6 py-4"></td>
+                            <td class="px-6 py-4"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="bg-gray-800/50 py-20 border-y border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Tudo o que você precisa em um só lugar</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Não perca meses gravando vídeos ou procurando na internet. Entregamos a base de dados perfeita, pronta para importação estruturada.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-green-500/50 transition-colors">
+                    <div class="bg-gray-800 w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="database" class="text-green-500 w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">605 Exercícios Catalogados</h3>
+                    <p class="text-gray-400">Uma lista gigantesca abrangendo musculação, funcional, cardio e alongamentos. O catálogo mais rico do mercado.</p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-green-500/50 transition-colors">
+                    <div class="bg-gray-800 w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="play-circle" class="text-green-500 w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">GIFs de Execução</h3>
+                    <p class="text-gray-400">Cada exercício acompanha um link para um GIF demonstrativo claro e profissional da execução correta do movimento.</p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-green-500/50 transition-colors">
+                    <div class="bg-gray-800 w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="scan-line" class="text-green-500 w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">QR Codes Exclusivos</h3>
+                    <p class="text-gray-400">Links e QR codes prontos. Ideal para donos de academia colarem nos equipamentos ou personais criarem fichas interativas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Para quem é o FitDB Pro?</h2>
+            
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="flex-1 bg-gradient-to-b from-gray-800 to-gray-900 p-8 rounded-2xl">
+                    <i data-lucide="code" class="text-green-400 mb-4 w-10 h-10"></i>
+                    <h4 class="text-xl font-bold mb-2">Desenvolvedores (Devs)</h4>
+                    <p class="text-gray-400">Quer criar um app fitness? Importe nossos dados em JSON ou CSV diretamente para o seu banco (PostgreSQL, Firebase, MySQL) e pule meses de data entry.</p>
+                </div>
+                <div class="flex-1 bg-gradient-to-b from-gray-800 to-gray-900 p-8 rounded-2xl">
+                    <i data-lucide="dumbbell" class="text-green-400 mb-4 w-10 h-10"></i>
+                    <h4 class="text-xl font-bold mb-2">Personal Trainers</h4>
+                    <p class="text-gray-400">Eleve o nível da sua consultoria online. Use os GIFs e QR Codes para montar planilhas (Excel, Notion) incrivelmente visuais para seus alunos.</p>
+                </div>
+                <div class="flex-1 bg-gradient-to-b from-gray-800 to-gray-900 p-8 rounded-2xl">
+                    <i data-lucide="building" class="text-green-400 mb-4 w-10 h-10"></i>
+                    <h4 class="text-xl font-bold mb-2">Donos de Academia</h4>
+                    <p class="text-gray-400">Imprima os QR Codes fornecidos na planilha e cole nos equipamentos da sua academia, oferecendo suporte digital e moderno para seus alunos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / CTA Section -->
+    <section id="comprar" class="py-20 relative">
+        <!-- Glow effect background -->
+        <div class="absolute inset-0 bg-green-500/5 blur-[100px] pointer-events-none"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-2xl mx-auto bg-gray-900 border-2 border-green-500 rounded-3xl p-8 md:p-12 text-center shadow-2xl shadow-green-900/20">
+                <h2 class="text-3xl font-bold mb-4">Acesso Imediato à Planilha Completa</h2>
+                <p class="text-gray-400 mb-8">Formato universal (Google Sheets, Excel, CSV) pronto para download e uso imediato.</p>
+                
+                <div class="mb-8">
+                    <p class="text-gray-500 line-through text-lg">De: R$ 497,00</p>
+                    <div class="flex justify-center items-center gap-2">
+                        <span class="text-2xl text-green-500 font-bold">R$</span>
+                        <span class="text-6xl font-extrabold text-white">147</span>
+                        <span class="text-xl text-gray-500 mt-4">,00</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mt-2">Pagamento único. Acesso vitalício.</p>
+                </div>
+                
+                <ul class="text-left max-w-md mx-auto mb-10 space-y-4">
+                    <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-green-500"></i> Planilha com 605 Exercícios</li>
+                    <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-green-500"></i> Link para os GIFs de execução</li>
+                    <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-green-500"></i> QR Codes individuais gerados</li>
+                    <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-green-500"></i> Formato Excel (.xlsx) e CSV</li>
+                </ul>
+
+                <!-- IMPORTANTE: Substitua o link do href pelo link do checkout da Kiwify/Hotmart -->
+                <a href="#" class="btn-glow block w-full bg-green-500 text-gray-900 font-extrabold text-xl py-5 rounded-xl uppercase tracking-wider">
+                    Comprar e Baixar Agora
+                </a>
+                
+                <div class="flex items-center justify-center gap-2 mt-6 text-sm text-gray-500">
+                    <i data-lucide="lock" class="w-4 h-4"></i> Pagamento 100% Seguro
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-10 mt-10">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <div class="flex justify-center items-center gap-2 mb-4">
+                <i data-lucide="database" class="w-6 h-6"></i>
+                <span class="font-bold text-gray-300">FitDB Pro</span>
+            </div>
+            <p>© 2026 Todos os direitos reservados.</p>
+            <p class="text-xs mt-2 max-w-xl mx-auto">Este produto não garante resultados milagrosos. Todo exercício físico deve ser acompanhado por um profissional de educação física qualificado.</p>
+        </div>
+    </footer>
+
+    <!-- Inicializa os ícones do Lucide -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
